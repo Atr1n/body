@@ -5,6 +5,8 @@
 
 
 @import 'components/header';
+@import 'components/footer';
+
 @import 'components/main';
 @import 'components/method';
 @import 'components/prog';
@@ -14,10 +16,11 @@
 @import 'components/products';
 @import 'components/comments';
 @import 'components/reason';
-@import 'components/footer';
 
 @import 'components/modals';
 @import 'components/globus';
+
+@import 'components/swiperArrow';
 
 
 .main-bg {
@@ -73,9 +76,10 @@
 }
 
 html {
-	line-height: $mainLineHeight;
-	font-size: $size16;
 	height: 100%;
+	line-height: $mainLineHeight;
+	letter-spacing: 0.01em;
+	font-size: $size16;
 	color: $darkOrange;
 	@media screen and (max-width: $desktopWidth) {
 		font-size: 16px;
@@ -95,6 +99,7 @@ body {
 	font-size: $size16;
 	font-weight: $fw600;
 	color: $darkOrange;
+	letter-spacing: 0.01em;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

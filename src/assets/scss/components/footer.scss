@@ -8,7 +8,8 @@
             li {
                 margin-bottom: 1rem;
                 a {
-                    color: $darkGreen;
+                    color: rgba(4, 67, 85, 0.6);
+                    font-weight: 500;
                     font-size: $size16;
                     &:hover {
                         color: $darkOrange;
@@ -25,7 +26,8 @@
             li {
                 padding-bottom: 2rem;
                 a {
-                    color: $darkGreen;
+                    color: rgba(4, 67, 85, 0.6);
+                    font-weight: 500;
                     font-size: $size16;
                     &:hover {
                         color: $darkOrange;

@@ -1,23 +1,34 @@
 .globe-container,
 .globe {
-  width: 200px;
-  height: 200px;
+	width: 200px;
+	height: 200px;
 }
 
 .globe-container {
-  position: relative;
-  display: inline-block;
-  margin: 30px;
-  transform: scale(1.1);
+	position: relative;
+	display: inline-block;
+	margin: 30px;
+	transform: scale(1.1);
 }
 
 .globe {
-  position: relative;
-  display: block;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left: 10rem;
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 10rem;
+	&::after {
+		content: '';
+		position: absolute;
+		top: -90px;
+		left: -89px;
+		width: 380px;
+		height: 380px;
+		background-image: url(../img/globus-bg.png);
+		background-size: cover;
+		opacity: .5;
+	}
 }
 
 .globe-worldmap,
@@ -26,52 +37,44 @@
 .globe-sphere,
 .globe-outer-shadow,
 .globe-inner-shadow {
-  position: absolute;
-  display: block;
-  margin: 0;
+	position: absolute;
+	display: block;
+	margin: 0;
 }
 
 .globe-sphere,
 .globe-outer-shadow,
 .globe-inner-shadow {
-  left: 0;
-  top: 0;
-  width: 200px;
-  height: 200px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 200px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
 }
 
 .globe-worldmap {
-  left: 0;
-  top: 0;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 50%;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 50%;
 }
 
 .globe-worldmap-front,
 .globe-worldmap-back {
-  left: 0;
-  top: 0;
-  width: 1000px;
-  height: 200px;
-  overflow: visible;
-  background-image: url(../img/worldmap.png);
-  background-repeat: no-repeat;
-}
-
-.globe-outer-shadow {
-  left: 0;
-  top: 186px;
-  width: 200px;
-  height: 30px;
-  background-image: url(../img/outer_shadow.png);
+	left: 0;
+	top: 0;
+	width: 1000px;
+	height: 200px;
+	overflow: visible;
+	background-image: url(../img/worldmap-8.png);
+	background-repeat: no-repeat;
 }
 
 .globe-inner-shadow {
-  background-image: url(../img/inner_shadow.png);
+  	background-image: url(../img/inner_shadow.png);
 }
 
 .globe-worldmap-front {
@@ -80,26 +83,26 @@
 }
 
 .globe-worldmap-back {
-  background-position: 0px -220px;
-  animation: textureSpin 8s linear infinite;
+	background-position: 0px -220px;
+	animation: textureSpin 8s linear infinite;
 }
 
 @keyframes textureSpin {
-  from {
-    transform: translateX(0);
-  }
+	from {
+		transform: translateX(0);
+	}
 
-  to {
-    transform: translateX(-47.5%);
-  }
+	to {
+		transform: translateX(-47.5%);
+	}
 }
 
 @keyframes textureSpinreverse {
-  from {
-    transform: translateX(-47.5%);
-  }
+	from {
+		transform: translateX(-47.5%);
+	}
 
-  to {
-    transform: translateX(0);
-  }
+	to {
+		transform: translateX(0);
+	}
 }
