@@ -1,3 +1,3 @@
-// import './slider'
+import './slider'
+import './modals'
 // import './mask'
-// import './modals'

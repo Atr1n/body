@@ -1,0 +1,61 @@
+.comments {
+    padding: 6rem 0;
+    &-title {
+        h2 {
+            span {
+                color: $darkGreen;
+            }
+        }
+    }
+    &-content {
+        padding: 5rem 0;
+        &__item {
+            display: flex;
+            gap: 3rem;
+            &__desc {
+                margin-top: 0.5rem;
+                h3 {
+                    padding-bottom: 0.6rem;
+                    font-size: $size22;
+                    color: $darkOrange;
+                    font-weight: 600;
+                    span {
+                        padding-left: 0.5rem;
+                        color: $blue;
+                    }
+                }
+                h4 {
+                    padding-bottom: 0.6rem;
+                    font-size: $size16;
+                    color: $blue;
+                    font-weight: 600;
+                }
+                p {
+                    width: 400px;
+                    font-size: $size16;
+                    color: $blue;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background: $darkOrange;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 8px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: -10px;
+}

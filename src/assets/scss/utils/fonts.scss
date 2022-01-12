@@ -1,1 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+	src: url('../fonts/montserrat/Montserrat-Regular.ttf');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+	src: url('../fonts/montserrat/Montserrat-Medium.ttf');
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+	src: url('../fonts/montserrat/Montserrat-SemiBold.ttf');
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+	src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+	font-style: normal;
+	font-weight: 700;
+}

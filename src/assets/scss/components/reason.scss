@@ -1,0 +1,55 @@
+.reason {
+    margin-top: 6rem;
+    &-title {
+        h3 {
+            span {
+                color: $darkGreen;
+            }
+        }
+    }
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6rem;
+        &__item {
+            display: flex;
+            gap: 1.2rem;
+            margin-bottom: 2rem;
+            &__bg {
+                margin-top: -4rem;
+            }
+        }
+    }
+    &-last {
+        display: flex;
+        justify-content: center;
+        margin-top: 6rem;
+        p {
+            width: 425px;
+            padding: 1rem;
+            text-align: center;
+            background: #FFFFFF;
+            border: 1px solid #BEBEBE;
+            border-radius: 15px 15px 15px 45px;
+            font-weight: normal;
+            font-size: $size20;
+            span {
+                color: $darkGreen;
+            }
+        }
+    }
+}
+
+.last {
+    margin-top: 10rem;
+    &-title {
+        display: flex;
+        justify-content: center;
+        h3 {
+            font-weight: 600;
+            span {
+                color: $darkGreen;
+            }
+        }
+    }
+}

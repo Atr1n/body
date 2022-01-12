@@ -1,0 +1,38 @@
+.footer {
+    margin-top: 6rem;
+    padding: 2rem;
+    &-content {
+        display: grid;
+        grid-template-columns: 260px 300px 1fr 1fr;
+        &__list {
+            li {
+                margin-bottom: 1rem;
+                a {
+                    color: $darkGreen;
+                    font-size: $size16;
+                    &:hover {
+                        color: $darkOrange;
+                        border-color: $darkOrange;
+                    }
+                }
+            }
+        }
+        &__social {
+            display: flex;
+            gap: 1rem;
+        }
+        &__last {
+            li {
+                padding-bottom: 2rem;
+                a {
+                    color: $darkGreen;
+                    font-size: $size16;
+                    &:hover {
+                        color: $darkOrange;
+                        border-color: $darkOrange;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.video {
+    padding: 6rem 0;
+    background: url(../img/video-bg.jpg) center no-repeat;
+    background-size: cover;
+    &-title {
+        h2 {
+            color: $blue;
+            span {
+                color: $darkOrange;
+            }
+        }
+    }
+    &-content {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+}

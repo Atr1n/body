@@ -1,0 +1,37 @@
+.header {
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-item {
+        z-index: 1;
+        a {
+            padding-bottom: 0.3rem;
+            color: $darkGreen;
+            border-bottom: 1px solid $darkGreen;
+            &:hover {
+                color: $darkOrange;
+                border-color: $darkOrange;
+            }
+        }
+    }
+    &-logo {
+        cursor: pointer;
+    }
+    &-social {
+        display: flex;
+        gap: 1rem;
+        z-index: 1;
+    }
+    &-btn {
+        margin-left: 1.3rem;
+        z-index: 1;
+        a {
+            padding: 0.7rem 2.5rem;
+            color: $blue;
+            border-radius: 8px;
+            border: 1px solid $darkOrange;
+        }
+    }
+}

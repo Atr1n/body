@@ -1,0 +1,84 @@
+.method {
+    padding: 6rem 0;
+    background: url(../img/method-bg.jpg) center no-repeat;
+    background-size: cover;
+    &-title {
+        display: flex;
+        justify-content: center;
+        h2 {
+            width: 880px;
+        }
+    }
+    &-content {
+        display: grid;
+        margin-top: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &__desc {
+                h3 {
+                    color: $darkOrange;
+                    font-size: $size20;
+                }
+                p {
+                    color: $blue;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    &-globus {
+        padding-top: 6rem;
+        &__content {
+            display: grid;
+            padding-left: 4rem;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            &__item {
+                &__desc {
+                    p {
+                        text-align: center;
+                        color: $blue;
+                        font-size: $size25;
+                        font-weight: normal;
+                        line-height: 170%;
+                        strong {
+                            color: $darkOrange;
+                        }
+                    }
+                }
+                &__text {
+                    p {
+                        text-align: center;
+                        font-size: $size20;
+                        font-weight: normal;
+                        line-height: 170%;
+                        span {
+                            color: $blue;
+                        }
+                    }
+                }
+                &__suptext {
+                    margin-top: 2rem;
+                    p {
+                        padding: 0.4rem 0.5rem;
+                        text-align: center;
+                        background: #FFFFFF;
+                        border-radius: 15px 15px 15px 45px;
+                        border: 1px solid rgba(190, 190, 190, 0.8);
+                        color: $blue;
+                        font-weight: normal;
+                        line-height: 170%;
+                        font-size: $size25;
+                        span {
+                            color: $darkOrange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -14,7 +14,7 @@
   "author": "https://github.com/Atr1n",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Atr1n/imarketing.git"
+    "url": "git+https://github.com/Atr1n/body.git"
   },
   "keywords": [
     "webpack",
@@ -27,6 +27,7 @@
   "license": "MIT",
   "dependencies": {
     "imask": "^6.0.7",
+    "sass": "^1.45.2",
     "swiper": "^6.7.0",
     "vue": "^2.6.11"
   },

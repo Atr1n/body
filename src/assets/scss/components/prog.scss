@@ -1,0 +1,61 @@
+.prog {
+    padding: 6rem 0;
+    background: url(../img/prog-bg.jpg) center no-repeat;
+    background-size: cover;
+    &-b {
+        padding: 1rem 0;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        border-radius: 15px 45px 45px 45px;
+    }
+    &-title {
+        h3 {
+            padding-top: 1rem;
+            color: $blue;
+            font-weight: normal;
+        }
+    }
+    &-content {
+        display: flex;
+        margin-top: 3rem;
+        justify-content: space-between;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            &:nth-child(1) {
+                margin-top: -13rem;
+                justify-content: center;
+            }
+            &:nth-child(3) {
+                margin-top: 10rem;
+                margin-right: 1rem;
+                justify-content: center;
+            }
+            &__title {
+                display: flex;
+                padding-bottom: 1.6rem;
+                justify-content: center;
+                h4 {
+                    background: #FFFFFF;
+                    border-radius: 15px 15px 15px 45px;
+                    border: 1px solid rgba(190, 190, 190, 0.8);
+                    color: $darkOrange;
+                    font-size: $size24;
+                    font-weight: 500;
+                }
+                &__one {
+                    padding: 0.3rem 5rem;
+                }
+                &__sec {
+                    padding: 0.3rem 1rem;
+                }
+            }
+            &__text {
+                p {
+                    text-align: center;
+                    color: $blue;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}

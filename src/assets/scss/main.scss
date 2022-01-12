@@ -4,10 +4,79 @@
 @import 'utils/reset';
 
 
+@import 'components/header';
+@import 'components/main';
+@import 'components/method';
+@import 'components/prog';
+@import 'components/progin';
+@import 'components/video';
+@import 'components/authors';
+@import 'components/products';
+@import 'components/comments';
+@import 'components/reason';
+@import 'components/footer';
+
+@import 'components/modals';
+@import 'components/globus';
+
+
+.main-bg {
+	background: url(../img/main-bg.jpg) bottom no-repeat;
+	background-size: cover;
+}
+
+.last-bg {
+	padding: 2rem 0;
+	background: url(../img/last-bg.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.main-btn {
+	a {
+		padding: 1rem 3.5rem;
+		background: linear-gradient(0deg, #2F5C48 0%, rgba(105, 180, 146, 0.28) 100%),#008000;
+		box-shadow: 0px 4px 4px rgba(4, 67, 85, 0.8);
+		border-radius: 120px;
+		color: $yellow;
+		font-size: $size16;
+		font-weight: 500;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+}
+
+.span-blue {
+	color: $blue;
+}
+
+.span-darkGreen {
+	color: $darkGreen;
+}
+
+.span-darkOrange {
+	color: $darkOrange;
+}
+
+.mainTitle {
+	font-size: $size36;
+	line-height: 150%;
+	letter-spacing: 0.01em;
+	text-align: center;
+	font-weight: 600;
+}
+
+.secondTitle {
+	font-size: $size25;
+	line-height: 150%;
+	letter-spacing: 0.01em;
+	text-align: center;
+}
+
 html {
 	line-height: $mainLineHeight;
-	font-size: $size22;
+	font-size: $size16;
 	height: 100%;
+	color: $darkOrange;
 	@media screen and (max-width: $desktopWidth) {
 		font-size: 16px;
 	}
@@ -23,8 +92,9 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: $mainFont;
-	font-size: $size22;
+	font-size: $size16;
 	font-weight: $fw600;
+	color: $darkOrange;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -55,8 +125,7 @@ li {
 	list-style-type: none;
 }
 
-section,
-	.section {
+section, .section {
 	position: relative;
 	padding: 1.5rem 0;
 	@media screen and (max-width: $smDesktopWidth) {
