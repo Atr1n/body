@@ -3,7 +3,6 @@
 @import 'utils/fonts';
 @import 'utils/reset';
 
-
 @import 'components/header';
 @import 'components/footer';
 
@@ -23,11 +22,6 @@
 @import 'components/swiperArrow';
 
 
-.main-bg {
-	background: url(../img/main-bg.jpg) bottom no-repeat;
-	background-size: cover;
-}
-
 .last-bg {
 	padding: 2rem 0;
 	background: url(../img/last-bg.jpg) center no-repeat;
@@ -35,6 +29,8 @@
 }
 
 .main-btn {
+	position: relative;
+	z-index: 3;
 	a {
 		padding: 1rem 3.5rem;
 		background: linear-gradient(0deg, #2F5C48 0%, rgba(105, 180, 146, 0.28) 100%),#008000;
@@ -81,15 +77,6 @@ html {
 	letter-spacing: 0.01em;
 	font-size: $size16;
 	color: $darkOrange;
-	@media screen and (max-width: $desktopWidth) {
-		font-size: 16px;
-	}
-	@media screen and (max-width: $tableWidth) {
-		font-size: 15px;
-	}
-	@media screen and (max-width: $phoneWidth) {
-		font-size: 14px;
-	}
 }
 
 body {
