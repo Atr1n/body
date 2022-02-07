@@ -14,5 +14,10 @@
         display: flex;
         justify-content: center;
         margin-top: 3rem;
+        img {
+            @media screen and (max-width: 456px) {
+                width: 100%;
+            }
+        }
     }
 }

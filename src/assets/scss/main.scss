@@ -3,6 +3,7 @@
 @import 'utils/fonts';
 @import 'utils/reset';
 
+
 @import 'components/header';
 @import 'components/footer';
 
@@ -20,7 +21,14 @@
 @import 'components/globus';
 
 @import 'components/swiperArrow';
+@import 'components/burger';
+@import 'components/cibk';
 
+
+.main-bg {
+	background: url(../img/main-bg.jpg) bottom no-repeat;
+	background-size: cover;
+}
 
 .last-bg {
 	padding: 2rem 0;
@@ -29,8 +37,6 @@
 }
 
 .main-btn {
-	position: relative;
-	z-index: 3;
 	a {
 		padding: 1rem 3.5rem;
 		background: linear-gradient(0deg, #2F5C48 0%, rgba(105, 180, 146, 0.28) 100%),#008000;
@@ -62,6 +68,10 @@
 	letter-spacing: 0.01em;
 	text-align: center;
 	font-weight: 600;
+	@media screen and (max-width: 456px) {
+		font-size: $size23;
+		line-height: 130%;
+	}
 }
 
 .secondTitle {
@@ -69,6 +79,9 @@
 	line-height: 150%;
 	letter-spacing: 0.01em;
 	text-align: center;
+	@media screen and (max-width: 456px) {
+		font-size: $size16;
+	}
 }
 
 html {
@@ -77,6 +90,15 @@ html {
 	letter-spacing: 0.01em;
 	font-size: $size16;
 	color: $darkOrange;
+	@media screen and (max-width: $desktopWidth) {
+		font-size: 16px;
+	}
+	@media screen and (max-width: $tableWidth) {
+		font-size: 15px;
+	}
+	@media screen and (max-width: $phoneWidth) {
+		font-size: 14px;
+	}
 }
 
 body {

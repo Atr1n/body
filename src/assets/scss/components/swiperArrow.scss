@@ -7,9 +7,15 @@
 }
 
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-    left: -80px;
+    left: calc(0.5rem - 300px);
+    @media screen and (max-width: 456px) {
+        display: none;
+    }
 }
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-    right: -60px;
+    right: calc(1rem - 300px);
+    @media screen and (max-width: 456px) {
+        display: none;
+    }
 }

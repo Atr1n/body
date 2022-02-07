@@ -1,9 +1,15 @@
 .footer {
     margin-top: 6rem;
     padding: 2rem;
+    @media screen and (max-width: 456px) {
+        margin-top: 1rem;
+    }
     &-content {
         display: grid;
         grid-template-columns: 260px 300px 1fr 1fr;
+        @media screen and (max-width: 456px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
         &__list {
             li {
                 margin-bottom: 1rem;
@@ -23,6 +29,9 @@
             gap: 1rem;
         }
         &__last {
+            @media screen and (max-width: 456px) {
+                margin-top: 1rem;
+            }
             li {
                 padding-bottom: 2rem;
                 a {

@@ -2,11 +2,17 @@
     padding: 6rem 0;
     background: url(../img/method-bg.jpg) center no-repeat;
     background-size: cover;
+    @media screen and (max-width: 456px) {
+        padding: 2rem 0;
+    }
     &-title {
         display: flex;
         justify-content: center;
         h2 {
             width: 880px;
+            @media screen and (max-width: 456px) {
+                text-align: left;
+            }
         }
     }
     &-content {
@@ -14,18 +20,31 @@
         margin-top: 3rem;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
+        @media screen and (max-width: 456px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
         &__item {
             display: flex;
             align-items: center;
             justify-content: center;
+            @media screen and (max-width: 456px) {
+                margin-bottom: 2rem;
+            }
             &__desc {
                 h3 {
                     color: $darkOrange;
                     font-size: $size20;
+                    @media screen and (max-width: 456px) {
+                        font-size: $size14;
+                        font-weight: 600;
+                    }
                 }
                 p {
                     color: $blue;
                     font-weight: normal;
+                    @media screen and (max-width: 456px) {
+                        font-size: $size14;
+                    }
                 }
             }
         }
@@ -35,8 +54,12 @@
         &__content {
             display: grid;
             padding-left: 4rem;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
             align-items: center;
+            @media screen and (max-width: 456px) {
+                padding-left: 0;
+                grid-template-columns: repeat(1, 1fr);
+            }
             &__item {
                 &__desc {
                     p {
@@ -45,17 +68,27 @@
                         font-size: $size25;
                         font-weight: normal;
                         line-height: 170%;
+                        @media screen and (max-width: 456px) {
+                            font-size: $size30;
+                        }
                         strong {
                             color: $darkOrange;
                         }
                     }
                 }
                 &__text {
+                    @media screen and (max-width: 456px) {
+                        margin-top: 1rem;
+                    }
                     p {
                         text-align: center;
                         font-size: $size20;
                         font-weight: normal;
                         line-height: 170%;
+                        @media screen and (max-width: 456px) {
+                            font-size: $size14;
+                            font-weight: 600;
+                        }
                         span {
                             color: $blue;
                         }
@@ -73,6 +106,9 @@
                         font-weight: normal;
                         line-height: 170%;
                         font-size: $size25;
+                        @media screen and (max-width: 456px) {
+                            font-size: $size16;
+                        }
                         span {
                             color: $darkOrange;
                         }

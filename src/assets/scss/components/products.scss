@@ -2,6 +2,9 @@
     padding: 6rem 0;
     background: url(../img/products-bg.jpg) center no-repeat;
     background-size: cover;
+    @media screen and (max-width: 456px) {
+        padding: 3rem 0;
+    }
     &-title {
         h2 {
             color: $darkGreen;
@@ -11,6 +14,9 @@
         display: flex;
         justify-content: space-between;
         margin-top: 8rem;
+        @media screen and (max-width: 456px) {
+            flex-direction: column;
+        }
         &__item {
             position: relative;
             width: 365px;
@@ -20,10 +26,18 @@
             border: 1px solid #FFFFFF;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 15px 45px 45px 45px;
+            @media screen and (max-width: 456px) {
+                width: 100%;
+                margin-bottom: 6rem;
+            }
             &__img {
                 position: absolute;
                 top: -3rem;
                 left: 4rem;
+                @media screen and (max-width: 456px) {
+                    top: -4rem;
+                    left: 2.5rem;
+                }
             }
             &__title {
                 display: flex;
@@ -33,6 +47,9 @@
                 h3 {
                     font-size: 30px;
                     font-weight: 600;
+                    @media screen and (max-width: 456px) {
+                        font-size: 20px;
+                    }
                 }
             }
             &__list {
@@ -44,6 +61,9 @@
                 p {
                     color: $blue;
                     font-size: $size16;
+                    @media screen and (max-width: 456px) {
+                        font-size: 14px;
+                    }
                     span {
                         color: $darkOrange;
                     }
@@ -56,6 +76,9 @@
                 h3 {
                     font-size: $size25;
                     font-weight: 600;
+                    @media screen and (max-width: 456px) {
+                        font-size: 16px;
+                    }
                 }
             }
             &__btn {

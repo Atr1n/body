@@ -1,7 +1,10 @@
 .prog {
     padding: 6rem 0;
-    background: url(../img/prog-bg.png) top no-repeat;
+    background: url(../img/prog-bg.jpg) center no-repeat;
     background-size: cover;
+    @media screen and (max-width: 456px) {
+        padding: 2rem 0;
+    }
     &-b {
         padding: 1rem 0;
         box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
@@ -18,22 +21,48 @@
         display: flex;
         margin-top: 3rem;
         justify-content: space-between;
+        @media screen and (max-width: 456px) {
+            flex-direction: column;
+        }
         &__item {
             display: flex;
             flex-direction: column;
+            @media screen and (max-width: 456px) {
+                margin-bottom: 1rem;
+            }
             &:nth-child(1) {
                 margin-top: -13rem;
                 justify-content: center;
+                @media screen and (max-width: 456px) {
+                    margin-top: 0;
+                    order: -2;
+                }
             }
             &:nth-child(3) {
                 margin-top: 10rem;
                 margin-right: 1rem;
                 justify-content: center;
+                @media screen and (max-width: 456px) {
+                    margin-top: 0;
+                    margin-right: 0;
+                    order: -1;
+                }
+            }
+            &__img {
+                @media screen and (max-width: 456px) {
+                    width: 320px;
+                    height: 320px;
+                }
             }
             &__title {
                 display: flex;
                 padding-bottom: 1.6rem;
                 justify-content: center;
+                @media screen and (max-width: 456px) {
+                    display: inline-block;
+                    padding: 1rem;
+                    text-align: center;
+                }
                 h4 {
                     background: #FFFFFF;
                     border-radius: 15px 15px 15px 45px;
@@ -42,12 +71,21 @@
                     font-size: $size24;
                     font-weight: 600;
                     line-height: 170%;
+                    @media screen and (max-width: 456px) {
+                        font-size: $size16;
+                    }
                 }
                 &__one {
                     padding: 0.3rem 5rem;
+                    @media screen and (max-width: 456px) {
+                        padding: 0;
+                    }
                 }
                 &__sec {
                     padding: 0.3rem 1rem;
+                    @media screen and (max-width: 456px) {
+                        padding: 0;
+                    }
                 }
             }
             &__text {
@@ -57,6 +95,9 @@
                     text-align: center;
                     color: $blue;
                     line-height: 170%;
+                    @media screen and (max-width: 456px) {
+                        font-size: $size14;
+                    }
                 }
             }
         }
