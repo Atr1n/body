@@ -665,14 +665,14 @@
 								<div class="cibk-item__inner">
 									<p>Вы достигли вашего идеального веса</p>
 									<p>
-										<span id="cibk-total">кг</span>
+										<span id="ves-total"></span>
 									</p>
 								</div>
 							</div>
 							<div class="cibk-item">
 								<div class="cibk-item__inner">
 									<p>С помощью программы <strong>ЭВОЛЮЦИИ ТЕЛА</strong> через *</p>
-									<span id="cibk-total">мес.</span>
+									<span id="mes-total"></span>
 								</div>
 							</div>
 							<div class="main-btn main-dis__btn cibk-item__btn">
@@ -697,11 +697,20 @@
 					f.weight.addEventListener('input', calculate);
 				}
 				function calculate() {
-					let total = 655+(9.6*parseInt(f.weight.value))+(1.8*parseInt(f.height.value))-(4.7*parseInt(f.age.value));
-					if (isNaN(total)) total = '?';
-					else total = Math.round(total);
-					document.getElementById('cibk-total').innerText = total;
+					let mes = document.getElementById('ves-total')
+					let ves = document.getElementById('mes-total')
+					let total = f.height.value * 3 - 450 + f.age.value * 0.2 + 43;
+
+					mes.innerText = total + 'кг';
 				}
+				// function calculate() {
+				// 	let total = (9.6*parseInt(f.weight.value))+(1.8*parseInt(f.height.value))-(4.7*parseInt(f.age.value));
+				// 	if (isNaN(total)) {
+				// 		total = '';
+				// 	}
+				// 	else total = Math.round(total);
+				// 	document.getElementById('cibk-total').innerText = total + 'кг';
+				// }
 			})();
 		</script>
  	</body>
