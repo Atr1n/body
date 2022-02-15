@@ -664,9 +664,7 @@
 							<div class="cibk-item">
 								<div class="cibk-item__inner">
 									<p>Вы достигли вашего идеального веса</p>
-									<p>
-										<span id="ves-total"></span>
-									</p>
+                                    <span id="ves-total"></span>
 								</div>
 							</div>
 							<div class="cibk-item">
@@ -692,17 +690,29 @@
 				let b = document.getElementById('cibk');
 				if (b && typeof(b) != 'undefined') {
 					var f = document.cibk;
-					f.age.addEventListener('input', calculate);
-					f.height.addEventListener('input', calculate);
-					f.weight.addEventListener('input', calculate);
+                    f.age.addEventListener('input', calculate);
+                    f.height.addEventListener('input', calculate);
+                    f.weight.addEventListener('input', calculate);
 				}
 				function calculate() {
 					let mes = document.getElementById('ves-total')
 					let ves = document.getElementById('mes-total')
-					let total = f.height.value * 3 - 450 + f.age.value * 0.2 + 43;
 
-					mes.innerText = total + 'кг';
+					let total1 = f.height.value * 3 - 450
+                    let total2 = +total1 + +f.age.value
+                    let total3 = total2 * 225 / 1000 + 43
+                    let totalx = -f.weight.value - -total3                    
+                    let totaldif = f.weight.value * 10 / 100
+                    let totalm = totalx / totaldif
+
+                    console.log(total3)
+                    
+					mes.innerText = total3 + 'кг';
+					ves.innerText = totalm + 'мес';
 				}
+
+                calculate()
+
 				// function calculate() {
 				// 	let total = (9.6*parseInt(f.weight.value))+(1.8*parseInt(f.height.value))-(4.7*parseInt(f.age.value));
 				// 	if (isNaN(total)) {
